@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TTP-Assignment-07/static/css/main.64a869fd.css",
+    "main.js": "/TTP-Assignment-07/static/js/main.11db2e0d.js",
+    "index.html": "/TTP-Assignment-07/index.html",
+    "main.64a869fd.css.map": "/TTP-Assignment-07/static/css/main.64a869fd.css.map",
+    "main.11db2e0d.js.map": "/TTP-Assignment-07/static/js/main.11db2e0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64a869fd.css",
+    "static/js/main.11db2e0d.js"
+  ]
+}

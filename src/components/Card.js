@@ -7,7 +7,7 @@ export default function Card (props) {
     return (
         // simple card component - renders a div with the information, as shown in the example
         <div className='card'>
-            <img src={gif.images.downsized.url} alt={gif.title} />
+            <img src={gif.images.fixed_width.url} alt={gif.title} />
         </div>
     )
 } 

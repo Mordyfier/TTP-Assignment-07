@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Search from './components/Search'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>
+          Zip Code App
+        </h1>
       </header>
+      
+      <div className="text-field">
+        <label for="zipCode"><strong>Gif Keyword:</strong></label>
+        <input type="text" id="zipCode" name="zipCode"></input>
+      </div>
+      <button type="button" id="trendingButton">Trending</button>
+      <button type="button" id="randomButton">Random</button>
+      <Search />
     </div>
   );
 }

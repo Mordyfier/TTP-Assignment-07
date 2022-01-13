@@ -11,7 +11,7 @@ function App() {
       </header>
       
       <div className="text-field">
-        <label for="zipCode"><strong>Gif Keyword:</strong></label>
+        <label htmlFor="zipCode"><strong>Gif Keyword:</strong></label>
         <input type="text" id="zipCode" name="zipCode"></input>
       </div>
       <button type="button" id="trendingButton">Trending</button>

@@ -22,11 +22,13 @@ h1 {
 }
 
 .cards {
+  justify-content: center;
+  margin-top: 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 60%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 40px, auto, auto, auto;
 }
 
 .card {
@@ -61,5 +63,29 @@ li {
   padding-top: 5px;
   padding-bottom: 5px;
 margin-left: 50px;
+}
+
+.select-btns{
+  margin-bottom: 45px;
+}
+
+#zipCode{
+  margin-left: 5px;
+  
+}
+
+button{
+  font-family: 'Inter', sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1.5px solid grey;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 3px 3px silver;
+}
+button:hover {
+  background-color: lightgray;
 }
 

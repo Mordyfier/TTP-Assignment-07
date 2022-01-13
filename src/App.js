@@ -12,7 +12,7 @@ function App() {
       
       <div className="text-field">
         <label htmlFor="zipCode" id="zipCode-lbl"><strong>Gif Keyword:</strong></label>
-        <input type="text" id="zipCode" name="zipCode"></input>
+        <input type="text" id="searchButtonText" name="searchButton"></input>
         <button type="button" id="searchButton">Search</button>
       </div>
       <div className='select-btns'>

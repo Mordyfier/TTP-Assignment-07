@@ -32,24 +32,21 @@ h1 {
 }
 
 .card {
-  height: 200px;
-  width: 200px;
   margin: 10px;
   text-align: left;
   vertical-align: middle;
   border-radius: 10px;
 }
-.card > img {
-  height:200px;
+.gif{
+  height: 200px;
   width: 200px;
   border-radius: 10px;
 }
-.topLine {
-  background: rgba(236, 236, 236);
-  text-align: left;
-  vertical-align: middle;
-  padding: 20px;
-  line-height: 25px;  
+
+.random-gif {
+  border-radius: 10px;
+  height: 500px;
+  width: 500px;
 }
 
 ul {
@@ -66,21 +63,21 @@ margin-left: 50px;
 }
 
 .select-btns{
-  margin-bottom: 45px;
+  display: flex;
+  width: 300px;
+  margin: 0 auto 20px;
 }
 
-#zipCode{
-  margin-left: 5px;
-  
-}
 
 button{
+  height: 30px;
+  width: 100px;
   font-family: 'Inter', sans-serif;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 20px;
   margin-right: 20px;
-  border: 1.5px solid grey;
+  border: none;
   border-radius: 5px;
   text-align: center;
   box-shadow: 0 3px 3px silver;

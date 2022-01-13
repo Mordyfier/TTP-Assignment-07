@@ -11,6 +11,8 @@ function reduce(mode, query) {
             return "Here are the currently trending GIFs:";
         case 's':
             return `Here are some ${query} GIFs:`;
+        case 'n':
+            return `No ${query} GIFs found :(`;
         default:
             return;
     }
@@ -47,19 +49,30 @@ export default function Search() {
         searchButtonText = document.getElementById('searchButtonText');
 
         searchButton.addEventListener('click', async () => {
-            const response = await fetch(`https://api.giphy.com/v1/gifs/search?q=${searchButtonText.value}&api_key=${API_KEY}&limit=40`);
-            const data = await response.json();
-            setTitle(<h1>{reduce('s', searchButtonText.value)}</h1>);
-            setCards(data.data.map(x => <Card key={x.id} gif={x} />));
+            if (searchButtonText.value) {
+                const query = searchButtonText.value;
+                searchButtonText.value = "";
+                const response = await fetch(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=${API_KEY}&limit=40`);
+                const data = await response.json();
+                if (data.data.length > 0) {
+                    setTitle(<h1>{reduce('s', query)}</h1>);
+                    setCards(data.data.map(x => <Card key={x.id} gif={x} />));
+                    
+                } else {
+                    setTitle(<h1>{reduce('n', query)}</h1>);
+                    setCards("");
+                }
+            } else {
+                setTitle(<h1>Please enter a search term.</h1>)
+            }
         })
-        searchButton.value = "";
     }, []);
     return (
         <>
-        {title}
-        <div className="cards">
-            {cards}
-        </div>
+            {title}
+            <div className="cards">
+                {cards}
+            </div>
         </>
     )
 }

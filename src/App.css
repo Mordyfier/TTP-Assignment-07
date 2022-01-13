@@ -6,7 +6,7 @@
 
 .App-header {
   color: white;
-  background-color: rgba(34,34,34,255);
+  background-color: black;
   padding-bottom: 10px;
 }
 
@@ -49,25 +49,11 @@ h1 {
   width: 500px;
 }
 
-ul {
-  list-style-position: inside;
-  position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-li {
-  padding-top: 5px;
-  padding-bottom: 5px;
-margin-left: 50px;
-}
-
 .select-btns{
   display: flex;
   width: 300px;
   margin: 0 auto 20px;
 }
-
 
 button{
   height: 30px;

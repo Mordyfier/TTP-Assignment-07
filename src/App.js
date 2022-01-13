@@ -16,8 +16,8 @@ function App() {
         <button type="button" id="searchButton">Search</button>
       </div>
       <div className='select-btns'>
-      <button type="button" id="trendingButton">Trending</button>
-      <button type="button" id="randomButton">Random</button>
+        <button type="button" id="trendingButton">Trending</button>
+        <button type="button" id="randomButton">Random</button>
       </div>
       <Search />
     </div>

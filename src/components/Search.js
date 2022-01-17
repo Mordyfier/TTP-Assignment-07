@@ -28,7 +28,7 @@ export default function Search() {
     useEffect(() => {
         trendingButton = document.getElementById('trending-button');
         trendingButton.addEventListener('click', async () => {
-            const response = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=50`);
+            const response = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=40`);
             const data = await response.json();
             setTitle(<h1>{reduce('t')}</h1>);
             setCards(data.data.map(x => 
@@ -64,7 +64,7 @@ export default function Search() {
     async function search() {
         if (searchFieldText.value) {
             const query = searchFieldText.value;
-            const response = await fetch(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=${API_KEY}&limit=50`);
+            const response = await fetch(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=${API_KEY}&limit=40`);
             const data = await response.json();
             if (data.data.length > 0) {
                 setTitle(<h1>{reduce('s', query)}</h1>);

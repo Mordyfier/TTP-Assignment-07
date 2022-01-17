@@ -12,16 +12,14 @@ function App() {
         <img src={giphy_anim} alt="giphy animated logo" />
       </header>
       
-      <div className="text-field">
-        <label htmlFor="zipCode" id="zipCode-lbl"><strong>Gif Keyword:</strong></label>
-        <input type="text" id="searchButtonText" name="searchButton"></input>
-        <button type="button" id="searchButton">Search</button>
+      <div className='controls'>
+        <input type="text" id="search-field" name="search-field" placeholder='Try "cats"'></input>
+        <div className='select-btns'>
+          <button type="button" id="trending-button">Trending</button>
+          <button type="button" id="random-button">Random</button>
+        </div>
       </div>
 
-      <div className='select-btns'>
-        <button type="button" id="trendingButton">Trending</button>
-        <button type="button" id="randomButton">Random</button>
-      </div>
 
       <Search />
     </div>
